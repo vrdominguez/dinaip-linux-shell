@@ -352,7 +352,7 @@ sub eliminarZona{
 		}
 	}
 	else{
-		unless ($zonas  ~~ @dominios_vigilados){
+		unless (grep { $_ eq $zonas } @dominios_vigilados){
 			print "Error. El dominio $zonas no esta siendo vigilado\n";
 			exit(1);
 		}
