@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "Creating symlink for dinaip binary"
+
+# If /usr/sbin/dinaip symlink does not exists, create it pointing to /opt/dinaip/dinaip.pl
+if [ ! -L /usr/sbin/dinaip ]; then
+  ln -s /opt/dinaip/dinaip.pl /usr/sbin/dinaip
+fi

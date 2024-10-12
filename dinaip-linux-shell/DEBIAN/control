@@ -1,0 +1,8 @@
+Package: dinaip-linux-shell
+Version: 1.0.1
+Maintainer: Víctor R. Rodríguez Domínguez <5773902+vrdominguez@users.noreply.github.com>
+Architecture: all
+Depends: perl, libcrypt-ssleay-perl, libwww-perl, ca-certificates, curl, procps
+License: LGPL-3.0-or-later
+Description: Make your domain resolve to a dynamic IP.
+ dinaIP is an application that monitors the IP of the machine it is running on and updates the zone information as it changes. This way, all zones pointing to that machine remain up to date with the changes that occur.

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "Deleting symlink for dinaip binary"
+
+# If /usr/sbin/dinaip symlink exists, delete it
+if [ -L /usr/sbin/dinaip ]; then
+  rm -f /usr/sbin/dinaip
+fi
